@@ -6,8 +6,6 @@
 // @match        *://*.youtube.com/*
 // @run-at       document-end
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
-// @downloadURL  https://raw.githubusercontent.com/garbhj/Revert-YT-UI-Change/main/YouTube_Revert_Layout.js
-// @updateURL    https://raw.githubusercontent.com/garbhj/Revert-YT-UI-Change/main/YouTube_Revert_Layout.js
 // ==/UserScript==
 
 (function () {
