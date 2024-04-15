@@ -14,7 +14,7 @@
     'use strict';
 
     // Modify experiment flags to revert UI changes ***
-    ytcfg.set('EXPERIMENT_FLAGS', {å
+    ytcfg.set('EXPERIMENT_FLAGS', {
         ...ytcfg.get('EXPERIMENT_FLAGS'),
         "kevlar_watch_comments_panel_button": false,
         "kevlar_watch_comments_ep_disable_theater": true,
