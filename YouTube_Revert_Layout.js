@@ -2,17 +2,19 @@
 // @name         YouTube Revert Layout
 // @version      3.0
 // @author       Garbhj
-// @description  This script aims to revert some of Youtube's UI changes, unddoing the position change and formatting the video cards back into their original dimensions. It should be more accurate than most (at least it's better than all the other ones I've tried).
+// @description  This script aims to revert some of Youtube's UI changes, undoing the UI changes and formatting the video cards back into their original dimensions. It should be more accurate than most (at least it's better than all the other ones I've tried).
 // @match        *://*.youtube.com/*
 // @run-at       document-end
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
+// @downloadURL  https://raw.githubusercontent.com/garbhj/Revert-YT-UI-Change/main/YouTube_Revert_Layout.js
+// @updateURL    https://raw.githubusercontent.com/garbhj/Revert-YT-UI-Change/main/YouTube_Revert_Layout.js
 // ==/UserScript==
 
 (function () {
     'use strict';
 
     // Modify experiment flags to revert UI changes ***
-    ytcfg.set('EXPERIMENT_FLAGS', {
+    ytcfg.set('EXPERIMENT_FLAGS', {å
         ...ytcfg.get('EXPERIMENT_FLAGS'),
         "kevlar_watch_comments_panel_button": false,
         "kevlar_watch_comments_ep_disable_theater": true,
