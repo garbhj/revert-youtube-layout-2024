@@ -104,7 +104,7 @@
         // Modify video title styles (Selecting the yt-formatted-string element within the video-title-link)
         const videoTitleElements = document.querySelectorAll("a#video-title-link yt-formatted-string#video-title");
         videoTitleElements.forEach(element => {
-            element.style.fontSize = "1.5rem";
+            element.style.fontSize = "1.4rem";
             element.style.lineHeight = "2rem";
         });
 
