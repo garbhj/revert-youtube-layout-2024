@@ -2,7 +2,7 @@
 // @name         YouTube Revert Layout
 // @version      4.0
 // @author       Garbhj
-// @description  This script aims to revert some of Youtube's recent UI changes, with major improvements over V3. Mainly, it now fixes font size and formats the control bar properly on the video player! 
+// @description  This script aims to revert some of Youtube's recent UI changes, switching everything back around and formatting the video cards back into their original dimensions. It works pretty well on my computer (at least it's better than all the other ones I've tried).
 // @match        *://*.youtube.com/*
 // @run-at       document-end
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
@@ -61,7 +61,7 @@
     function modifySidebarVideos() {
 
         // ItemsContainer used for performance improvement, no substantial improvement at the end of the day
-        // Try switcing "document" with "itemsContainer" for all the querySelections below (except for the second last one) to try it out.
+        // Try switcing "document" with "itemsContainer" for all the querySelections below (except for the last one) to try it out.
         //const itemsContainer = document.querySelector('#items.style-scope.ytd-watch-next-secondary-results-renderer');
 
         // Format thumbnails to specified width
@@ -115,15 +115,15 @@
             div.style.lineHeight = "1.9rem";
         });
 
-        // Removes weird gap at the top of secondary recommendations (do not change scope from "document")
-        const secondaryDivs = document.querySelectorAll("div#secondary");
-        secondaryDivs.forEach(div => div.style.cssText = "padding-top: 0px;");
-
         // Remove sponsored thumbnail cards (I included this because UBlock standard filters can't handle them yet)
         var sponsoredThumbnails = document.querySelectorAll('div[id="fulfilled-layout"][class*="ytd-ad-slot-renderer"]');
         sponsoredThumbnails.forEach(function(thumbnail) {
             thumbnail.parentNode.removeChild(thumbnail);
         });
+
+        // Removes weird gap at the top of secondary recommendations
+        const secondaryDivs = document.querySelectorAll("div#secondary");
+        secondaryDivs.forEach(div => div.style.cssText = "padding-top: 0px;");
 
     }
 
