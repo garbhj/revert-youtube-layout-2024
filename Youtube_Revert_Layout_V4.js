@@ -150,7 +150,7 @@
             videoStream.style.height = container.offsetHeight + "px"; // Set height like this becasue 100% must made the height 0
         }
 
-        // Adjust interactive video content
+        // Adjust interactive video content (Idek what this does but it was one of the things that was the wrong size)
         const ivVideoContent = document.querySelector(".ytp-iv-video-content");
         if (ivVideoContent) {
             ivVideoContent.style.width = containerWidth;
