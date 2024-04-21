@@ -12,4 +12,5 @@ If you encounter any problems, feel free to open an issue, and I may or may not 
 
 # Other Notes
 For an easier (partial) solution, try simply adding the following line to whichever adblocker you already have that allows you to run your own filters (like UBlock Origin):
-youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.kevlar_watch_grid, false)
+
+  youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.kevlar_watch_grid, false)
