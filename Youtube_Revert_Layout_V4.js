@@ -45,8 +45,8 @@
             adjustVideoPlayerElements();
 
             const endTime = performance.now();
-            const executionTime1 = endTime - startTime;
-            const executionTime2 = endTime - startTime;
+            const executionTime1 = midTime - startTime;
+            const executionTime2 = endTime - midTime;
             console.log(`modifySidebarVideos() took ${executionTime1.toFixed(2)}ms to execute`);
             console.log(`adjustVideoPlayerElements() took ${executionTime2.toFixed(2)}ms to execute`);
 
@@ -61,6 +61,7 @@
     function modifySidebarVideos() {
 
         // ItemsContainer used for performance improvement, no substantial improvement at the end of the day
+        // Try switcing "document" with "itemsContainer" for all the querySelections below (except for the last one) to try it out.
         //const itemsContainer = document.querySelector('#items.style-scope.ytd-watch-next-secondary-results-renderer');
 
         // Format thumbnails to specified width
@@ -114,16 +115,15 @@
             div.style.lineHeight = "1.9rem";
         });
 
-        // Removes weird gap at the top of secondary recommendations
-        const secondaryDivs = document.querySelectorAll("div#secondary");
-        secondaryDivs.forEach(div => div.style.cssText = "padding-top: 0px;");
-
-
         // Remove sponsored thumbnail cards (I included this because UBlock standard filters can't handle them yet)
         var sponsoredThumbnails = document.querySelectorAll('div[id="fulfilled-layout"][class*="ytd-ad-slot-renderer"]');
         sponsoredThumbnails.forEach(function(thumbnail) {
             thumbnail.parentNode.removeChild(thumbnail);
         });
+
+        // Removes weird gap at the top of secondary recommendations
+        const secondaryDivs = document.querySelectorAll("div#secondary");
+        secondaryDivs.forEach(div => div.style.cssText = "padding-top: 0px;");
 
     }
 
