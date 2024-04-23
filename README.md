@@ -1,5 +1,5 @@
 # Revert-YT-UI-Change
-A userscript that aims to revert Youtube's recent UI change. 
+A userscript that aims to revert Youtube's recent UI change, with extensive attention to detail. 
 I am fairly certain that V4 is the **most accurate** script for reverting back to the pre-2024 layout, at least out of the ones that I could find.
 
 V4 is much more extensive than V3, with detailed adjustments for font size, the clipped off control bar, video window size, and I fixed the rate limiting.
