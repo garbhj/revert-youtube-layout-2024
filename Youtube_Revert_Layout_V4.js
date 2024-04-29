@@ -3,7 +3,7 @@
 // @version      4.0
 // @author       Garbhj
 // @description  This script aims to revert some of Youtube's recent UI changes, switching everything back around and formatting the video cards back into their original dimensions. It works pretty well on my computer (at least it's better than all the other ones I've tried).
-// @match        *://*.youtube.com/*
+// @match        *.youtube.com/watch?*
 // @run-at       document-end
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // ==/UserScript==
