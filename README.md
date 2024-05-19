@@ -1,4 +1,4 @@
-# Revert-YT-UI-Change
+# Description
 A userscript that aims to revert Youtube's recent UI change, with extensive attention to detail. 
 I am fairly certain that V4 is the **most accurate** script for reverting back to the pre-2024 layout, at least out of the ones that I could find.
 
@@ -10,6 +10,18 @@ V3 might be more lightweight, so try that out if you encounter any performance i
 Future version (Possibly): easier customization with instructions and easily settable variables.
 
 If you encounter any problems, feel free to open an issue, and I may or may not ever come around to checking it 
+
+# Instructions
+To use this, you'll need to:
+
+1. Go to the Chrome Web Store and install the Tampermonkey Chrome extension (or something similar).
+2. Once you do that, click "create a new script"
+3. Download or copy and paste the code in from here: https://github.com/garbhj/revert-youtube-layout-2024/tree/main
+4. Click save, and enable it when you visit Youtube (though it should be enabled by default after saving)
+
+It works by unchecking the experiment flags (taken from some other userscript), and then does a lot of cleanup work restyling everything.
+
+Note: Always verify that a userscript is safe before running it. Malicious scripts can be used to steal personal information.
 
 # Other Notes
 For an easier (partial) solution, try simply adding the following line to whichever adblocker you already have that allows you to run your own filters (like UBlock Origin):
