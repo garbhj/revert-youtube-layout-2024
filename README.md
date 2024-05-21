@@ -10,6 +10,7 @@ V3 might be more lightweight, so try that out if you encounter any performance i
 Future version (Possibly): easier customization with instructions and easily settable variables.
 
 If you encounter any problems, feel free to open an issue, and I may or may not ever come around to checking it 
+(I may also not be able to continue testing/debugging at the moment, since my layout got changed back to the pre-2024 version)
 
 # Instructions
 To use this, you'll need to:
