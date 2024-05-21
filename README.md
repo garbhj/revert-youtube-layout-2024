@@ -23,6 +23,8 @@ To use this, you'll need to:
 
 It works by unchecking the experiment flags (taken from some other userscript), and then does a lot of cleanup work restyling everything.
 
+Edit: I also uploaded it to greasyfork for easier installation at https://greasyfork.org/en/scripts/495706-youtube-revert-layout.
+
 Note: Always verify that a userscript is safe before running it. Malicious scripts can be used to steal personal information.
 
 # Other Notes
