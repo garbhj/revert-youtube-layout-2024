@@ -5,12 +5,12 @@ I am fairly certain that V4 is the **most accurate** script for reverting back t
 To use it, install Tampermonkey or some other similar userscript extension, click "Create New Script", and copy and paste in the code.
 
 V4 is much more extensive than V3, with detailed adjustments for font size, the clipped off control bar, video window size, and I fixed the rate limiting.
-V3 might be more lightweight, so try that out if you encounter any performance issues (though I really don't think that should be an issue). Or, try adjusting the rate limit.
+V3 changes fewer things so try switching over to that if you encounter any major bugs with V4. It's also a bit more lightweight, so try that out if you encounter any performance issues (though I really don't think that should be an issue). Or, try adjusting the rate limit.
 
 Future version (Possibly): easier customization with instructions and easily settable variables.
 
-If you encounter any problems, feel free to open an issue, and I may or may not ever come around to checking it 
-(I may also not be able to continue testing/debugging at the moment, since my layout got changed back to the pre-2024 version)
+If you encounter any problems, feel free to open an issue, and I may or may not ever come around to checking it.
+(I am not be able to continue testing/debugging at the moment, since my layout got changed back to the pre-2024 version)
 
 # Instructions
 To use this, you'll need to:
